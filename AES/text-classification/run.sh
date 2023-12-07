@@ -1,0 +1,12 @@
+python run_glue.py \
+  --model_name_or_path bert-base-cased \
+  --do_train True\
+  --do_eval True\
+  --train_file /home/kyy/transformers-main/examples/pytorch/text-classification/datasets/train.csv\
+  --validation_file /home/kyy/transformers-main/examples/pytorch/text-classification/datasets/dev.csv\
+  --output_dir /home/kyy/transformers-main/examples/pytorch/text-classification/outputfile\
+  --learning_rate 6e-5\
+  --num_train_epochs 2 \
+  --max_seq_length 512 \
+  --per_device_train_batch_size 24 \
+  --per_device_eval_batch_size 24
